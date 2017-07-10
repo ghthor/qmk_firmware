@@ -26,7 +26,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        |      |      |       |      |        |
  *                                 ,------|------|------|       |------+--------+------.
  *                                 |      |      |      |       |      |        |      |
- *                                 | Space| BkSp |------|       |------|        |      |
+ *                                 | Space| BkSp |------|       |------|        |Enter |
  *                                 |      |      | LNum |       | LNum |        |      |
  *                                 `--------------------'       `----------------------'
  */
@@ -52,7 +52,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
         KC_TRNS,  KC_TRNS,
         KC_TRNS,
-        MO(NUMB), KC_TRNS, KC_TRNS
+        MO(NUMB), KC_TRNS, KC_ENT
     ),
 
 /* Keymap 1: Numerals & Symbols
