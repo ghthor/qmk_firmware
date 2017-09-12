@@ -103,7 +103,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 const uint16_t PROGMEM fn_actions[] = {
-    [1] = ACTION_LAYER_TAP_TOGGLE(NUMB)                // FN1 - Momentary Layer 1 (Numerals & Symbols)
+    [1] = ACTION_LAYER_TAP_TOGGLE(CHRD)                // FN1 - Momentary Layer 1 (Numerals & Symbols)
 };
 
 const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
@@ -135,7 +135,7 @@ void matrix_scan_user(void) {
     ergodox_right_led_2_off();
     ergodox_right_led_3_off();
     switch (layer) {
-        case NUMB:
+        case CHRD:
             ergodox_right_led_1_on();
             break;
         default:
