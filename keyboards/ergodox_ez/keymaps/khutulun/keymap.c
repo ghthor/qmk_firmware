@@ -25,9 +25,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        ,-------------.       ,---------------.
  *                                        |      |      |       |      |        |
  *                                 ,------|------|------|       |------+--------+------.
- *                                 |      |      |      |       |      |        |      |
+ *                                 |      |      | Left |       |  Up  |        |      |
  *                                 | Spc  | Bcps |------|       |------|        | Ent  |
- *                                 |      |      |      |       |      |        |      |
+ *                                 |      |      | Down |       | Rght |        |      |
  *                                 `--------------------'       `----------------------'
  */
 
@@ -40,8 +40,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LBRC,        KC_TRNS,      KC_TRNS, KC_LALT, KC_LGUI,
 
                                                       KC_TRNS, KC_TRNS,
-                                                               KC_TRNS,
-                                              KC_SPC, KC_BSPC, KC_TRNS,
+                                                               KC_LEFT,
+                                              KC_SPC, KC_BSPC, KC_DOWN,
 
         // right hand
         KC_TRNS,      KC_6,    KC_7,     KC_8,    KC_9,    KC_0,           KC_MINS,
@@ -51,8 +51,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                KC_RGUI,  KC_RALT, KC_TRNS, KC_TRNS,        KC_RBRC,
 
         KC_TRNS,  KC_TRNS,
-        KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_ENT
+        KC_UP,
+        KC_RGHT, KC_TRNS, KC_ENT
     ),
 
 /* Keymap 1: Chord Layer
